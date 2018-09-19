@@ -1,0 +1,49 @@
+type User {
+  id: ID! @unique
+  name: String!
+  lname: String!
+  handle: String!
+  birthDate: DateTime!
+  password: String!
+  entryDate: DateTime!
+  gender: Enum
+  location: String
+}
+
+type Followers{
+  id: ID! @unique
+  userOrigin: User! @relation(name: "Origin")
+  userTarget: User! @relation(name: "Target")
+}
+
+
+type Likes{
+  id: ID! @unique
+  user: User!
+  photo: Pic!
+}
+
+type Pic{
+  URL: String!
+  description: String
+  picOrVid: Enum!
+  filter: Enum!
+}
+
+enum Gender{
+  MALE
+  FEMALE
+}
+
+enum picOrVid{
+  VIDEO
+  PICTURE
+}
+
+enum filter{
+  NONE
+  OLDSCHOOL
+  SEPIA
+  BW
+  BLURRY
+}

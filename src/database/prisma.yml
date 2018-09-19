@@ -1,0 +1,9 @@
+endpoint: https://us1.prisma.sh/rafeqc-dc8d39/instafafa/dev
+datamodel: datamodel.graphql
+
+#Deploy Hook
+
+# Con esto se puede hacer comandos de prismaen cualquier lado
+hooks:
+  post-deploy:
+    - graphql get-schema --project database

@@ -1,0 +1,23 @@
+{
+  "name": "insta_deveritas",
+  "version": "1.0.0",
+  "description": "Proyecto de rafa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaQC/fakeInsta.git"
+  },
+  "keywords": [
+    "proyecto",
+    "practie"
+  ],
+  "author": "Rafa Quintero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaQC/fakeInsta/issues"
+  },
+  "homepage": "https://github.com/RafaQC/fakeInsta#readme"
+}
